@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Cinematic Touches</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1 data-i18n="appTitle">Cinematic Touches</h1>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ar">عربي</button>
+    <button class="lang-btn" data-lang="ku">کوردی</button>
+  </div>
+</header>
+
+<div class="container">
+
+  <nav class="sidebar" aria-label="Main navigation">
+    <ul>
+      <li><button class="menu-btn active" data-section="home" data-i18n="menuHome">Home</button></li>
+      <li><button class="menu-btn" data-section="booking" data-i18n="menuBooking">Bookings</button></li>
+      <li><button class="menu-btn" data-section="contact" data-i18n="menuContact">Contact</button></li>
+      <li><button class="menu-btn" data-section="map" data-i18n="menuMap">Map</button></li>
+    </ul>
+  </nav>
+
+  <main class="content" id="content" tabindex="0">
+
+    <section id="home" class="section active">
+      <h2 data-i18n="homeTitle">Welcome to Cinematic Touches</h2>
+      <p data-i18n="homeDesc">
+        Cinematic Touches offers specialized services in graduation projects, video production, and presentations.<br/>
+        We provide full support for students, including theoretical and practical project preparation, as well as professional presentation videos.<br/>
+        Our mission is to help students succeed by delivering creative, high-quality work for their academic and cinematic needs.
+      </p>
+    </section>
+
+    <section id="booking" class="section">
+      <h2 data-i18n="bookingTitle">Project & Video Production Bookings</h2>
+      
+      <!-- استمارة Google Form مدمجة -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkEnh_n6mDLSczcdyXvfOdKvFN3RLcqGPiR2jXnQbbfD2fDA/viewform?embedded=true" width="100%" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      
+    </section>
+
+    <section id="contact" class="section">
+      <h2 data-i18n="contactTitle">Contact Us</h2>
+      <p><strong data-i18n="contactPhoneLabel">Phone:</strong> <a href="tel:+9647731542483" id="phone-link" class="phone-link">+964 773 154 2483</a></p>
+      <p><strong>Email:</strong> <a href="mailto:hussienalansari12@gmail.com" id="email-link" class="email-link">hussienalansari12@gmail.com</a></p>
+      <p><strong data-i18n="contactInstagramLabel">Instagram:</strong> <a href="https://instagram.com/cinematic_touches" target="_blank" rel="noopener">@cinematic_touches</a></p>
+    </section>
+
+    <section id="map" class="section">
+      <h2 data-i18n="mapTitle">Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6306954.17636996!2d42.02298425001211!3d33.118084760544756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1557823d54f54a11%3A0x6da561bba2061602!2z2YXYs9mK2YbYp9mE2KrYp9iq2YrYqNmI2KfZhNi52YTZhtiq2LHYtdmI2KfYqNmF2YrYqSDYp9mE2LHZiiDYqNin2YTYp9iz2KfZhtin2K8!5e0!3m2!1sen!2sus!4v1684917981234!5m2!1sen!2sus"
+        width="100%"
+        height="320"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Cinematic Touches Location"
+      ></iframe>
+    </section>
+
+  </main>
+
+</div>
+
+<footer>
+  <p>© 2025 Cinematic Touches | All Rights Reserved</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
